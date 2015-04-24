@@ -30,7 +30,7 @@ describe '.'
         normal .(l
         Expect getline('.') ==# "((hoge))"
         normal .{l
-        Expect getline('.') ==# "(({hoge}))"
+        Expect getline('.') ==# "(('hoge'))"
         normal .'
         Expect getline('.') ==# "(({'hoge'}))"
     end
